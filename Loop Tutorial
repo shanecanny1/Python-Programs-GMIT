@@ -1,0 +1,8 @@
+# Shane Canny 07th Feb 2018
+# Loop Tutorial
+
+i = 1 # Assigning the integer number 1 to i
+while i<=10: # this is a "while" statement which creates a loop as long a "i" is less than or equal to 10
+    print (i) # print the value of "i" 
+    i= 1+i # this allows the loop to close by calualating the next integer based off "1"
+print ('the final number is:',i) # this prints the sentence with the last calculation of "i"
