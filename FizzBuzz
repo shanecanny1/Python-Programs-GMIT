@@ -1,0 +1,15 @@
+# Shane Canny 07th Feb 2018
+# FizzBuzz Check Wiki
+
+i=1 # assign "i" the integer nmuber 1
+
+while i <= 100: # "while" statement repeat program while "i" is less than or equal to 100
+ if (i % 3 == 0) and (i % 5 == 0): # "if" statements, if the result of "i" divided by 3 or 5 is 0 write "FizzBuzz"
+  print("FizzBuzz") # print "FizzBuzz" based on the if statement above i.e. if "i" has a remainder of 0 after division by 3 or 5
+ elif i % 3 == 0: # else if statement detailing to divide "i" by 3 and if the remainder is 0
+  print("Fizz") # print "Fizz" based off the previous else if statement i.e. if "i" is divisible by 3 with no remainder print "Fizz"
+ elif i % 5 == 0: # else if statement detailing to divide "i" by 5 and if the remainder is 0
+  print("Buzz") # print "Buzz" based off the previous else if statement i.e. if "i" is divisible by 5 with no remainder print "Buzz"
+ else: # else statement for when any of the statements above are not applicable
+  print(i) # print "i" based off the else statement above i.e. print "i" when none of the statements above are applicable
+ i = i + 1 # allowing "i" to count up for the "while" statement
