@@ -1,0 +1,8 @@
+# Shane Canny 07th Feb 2018
+# Is today Tuesday Program?
+
+import datetime # import the date
+if datetime.datetime.today().weekday()==0: # "if" statement for if the date imported is Tueday i.e. 1, then Monday is 0, Tuesday is 1, Wednesday is 2 etc
+    print("Hay today is Tuesday") # print the statement if today is Tueday
+else: # else statement for if the date imported is not Tuesday
+    print ("Unfortunately its Not") # print the statement in inverted commas
