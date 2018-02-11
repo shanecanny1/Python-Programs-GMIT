@@ -1,0 +1,14 @@
+# Shane Canny 07th Feb 2018
+# Adapted from: https://docs.python.org/3/tutorial/controlflow.html#if-statements
+
+x = int(input("Please enter an integer: ")) # assigning an integer to "x" as an input after the input sentence
+if x < 0: # "if" statement of when "x is zero"
+    x = 0 # you assign 0
+    print('Negative changed to zero') # print the sentence if x is less than zero
+elif x == 0: # else if statement of if the value enter is 0
+    print('Zero') # print zero if the value entered is zero
+elif x == 1: # else if statement of if value entered is 1 
+    print('Single') # print single if value entered is 1
+else:
+    print('More') # else statement if not less than 0, or 0 or 1 print "more"
+print ("the final value of x:", x) # here the final value of X is printed
