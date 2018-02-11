@@ -1,0 +1,17 @@
+# Shane Canny 11th of Feb 2018
+# Exercise 3 the Collatz Conjecture
+
+y = int(input("Please enter a positive integer: ")) # this is the starting statement to prompt an input to the program
+x = 0 # this was tricky and took me ages to figure out, it is the start of a counter to stop the programming going into a loop
+while y > 1: # this is the start if the while statement, basically saying whilr y is greater than 1 run the statements below
+ if y % 2 == 0: # this "if" statement is to check for an even number, if the remained of y divided by 2 is zero, it is defined as even
+    y= (y/2) # if "y" us even divide by 2
+    print (y) # print the result "y"
+ elif y % 2 == 1: # this is an else if statement, if "y" divided by 2 leaves a remainder of 1 it is an odd number
+    y = (y*3+1) # if "y" an odd number multiple it by 3 and add 1.
+    print (y) # print your result
+ else: 
+    print (y) # this is an else statement detailing to print "y", this is not required as the very first while statement outlines y > 1
+ x = x + 1 # this defines the end of the loop i.e. x= 0 start x = x+1 = end
+
+print ("the Final Value of the Collatz Conjecture is:", y) # this is just a line added to show out to print a final statement based off the last result, copied from the "if" statement tutorial 
