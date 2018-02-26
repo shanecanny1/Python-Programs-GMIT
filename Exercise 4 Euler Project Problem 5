@@ -1,0 +1,19 @@
+# Euler Problem 5 Exercise 4 Shane Canny 25th Feb 2018
+# Reference https://www.youtube.com/watch?v=EMTcsNMFS_g
+# Reference https://www.youtube.com/watch?v=Km36RkQToqo
+
+
+def euler5(number): # Defining a variable to be used later
+  for i in range (11, 21): # using a for statement to create a loop in the range of 11 to 21
+   if (number % i != 0): # using an if statement to check if the unknown number modulo i leave a remainder of 0 
+    return False # if the remainder is not zero, False is returned
+  return True # if the remainder is zero, True is returned
+number = 2520 # number is assigned the number 2520
+while True: # while statement being used when the contents of i modulo number gives a remainder of zero
+  if euler5(number): # if statement used calling in the defined variable
+    break # breaking the loop from the while statement
+  number += 2520 # increaase the number 2520 by 1 sequentially
+
+  print (number) # print the number
+
+print ("The Number that all integers from 1 to 20 divides evenly into is:", number)
