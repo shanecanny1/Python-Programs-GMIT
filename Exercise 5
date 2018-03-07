@@ -1,0 +1,12 @@
+# Shane Canny, Exercise 5, 04th of March 2018
+
+print ("| Petal Length| Petal Width| Sepal Length| Sepal Width| Class") # Printing these headings with a wall between them at the start of the program
+
+with open ("irisdata/iris.csv") as f:    # using a 'with' statement to open the contents of "irisdata folder" and assigning it as "f"
+     for content in f:                   # using a 'for' statement to loop through the content in 'f'
+         content=content.strip()         # using the strip command to eliminate the empty lines in the content of 'f' i.e. eliminating double spacing
+         print ("|",content.split(',')[0]," "*(8-len(str(content[0]))),"|", # printing to screen a wall at the start of each column, then spliting the content of 'f' using the , as the point to split the data.Assigning this first column of data as 0, then I have detailed a space of 8 minus the length of the data content is to be assigned to the next dividing wall. The same process is used for the rest of the lines
+         content.split(',')[1]," "*(7-len(str(content[1]))),"|",
+         content.split(',')[2]," "*(8-len(str(content[2]))),"|",
+         content.split(',')[3]," "*(7-len(str(content[3]))),"|",
+         content.split(',')[4]) # Note in rows 8,9,10,11 I did not need to set the values to string using (str), program will work fine without them
