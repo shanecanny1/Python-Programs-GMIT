@@ -1,0 +1,13 @@
+# Shane Canny 06th of March 2018 Exercise 6
+# https://www.w3resource.com/python-exercises/python-functions-exercise-5.php
+
+
+def factorial(x): # defining the factorial as x
+    if x == 0:  # using an if statement to check if 0 is entered to return a 1, as the factorial of 0 is 1
+        return 1
+    elif x<0:  # using an elif statement to print " cannot calculate the factorial of a negative number if x is less than 0"
+        print ("Cannot calculate the factorial for a negative number")
+    else:   # using an else statement to return the factorial of the number entered
+        return x * factorial(x-1)
+x=int(input("Input a number to compute the factiorial : ")) # input statement to allow the input of an integer
+print(factorial(x)) # printing the factorial result from the factorial function on line 3
